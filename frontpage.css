@@ -1,0 +1,106 @@
+*,
+*:before,
+*:after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.link-container{
+    display:inline-block;
+    position: relative;
+    top: 7px;
+    padding: 30px;
+}
+body{
+    background-color: white;
+}
+nav{
+    text-align: right;
+    width: 100%;
+    background-size: 100%;
+    background-color: black;
+    position: fixed;
+    min-width: 600px;
+}
+.nav-link{
+    justify-content: right;
+    float: right;
+    margin-right: 30px;
+    position: relative;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    color: #a0a0a0;
+    font-size: 18px;
+
+}
+.nav-link:after{
+    content: "";
+    position: absolute;
+    background-color: cyan;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+.nav-link:hover{
+    color: rgb(221, 233, 241);
+}
+.nav-link:hover:after{
+    width: 100%;
+}
+.logo{
+    padding: 10px;
+    left: 20px;
+    margin: 0;
+    position: relative;
+    float: left;
+}
+.container{
+    margin: 0;
+    position: absolute;
+    background-color: black;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    opacity: 70%;
+    color: white;
+    text-align: center;
+}
+.title{
+    display: inline-block;
+    font-family: poppins;
+    position: relative;
+    margin-top: 15%;
+    font-size: 100px;
+    color: cyan;
+}
+.exp{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    position: relative;
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    padding: 10px 20px;
+    top: 40px;
+    border-radius: 20px;
+    border: solid cyan;
+    transition: 0.5s;
+}
+.exp:hover{
+    background-color: aquamarine;
+    color: brown;
+}
+.cam{
+    font-family: 'Franklin Gothic Medium';
+    font-size: 24px;
+}
+.cp{
+    font-family: arial;
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    opacity: 100%;
+    padding: 20px;
+}
